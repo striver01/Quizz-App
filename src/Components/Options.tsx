@@ -12,16 +12,15 @@ const Options: FC<Props> = ({ answers, userAnswers, callback }) => {
   return (
     <div>
       {answers.map((item) => (
-        <></>
-        // <Option
-        //   correct={userAnswers?.correctAnswer === item}
-        //   userClicked={userAnswers?.answer === item}
-        //   disabled={userAnswers ? true : false}
-        //   value={item}
-        //   onClick={callback}
-        // >
-        //   {item}
-        // </Option>
+        <Option
+          correct={userAnswers?.correctAnswer === item}
+          userClicked={userAnswers?.answer === item}
+          disabled={userAnswers ? true : false}
+          value={item}
+          onClick={callback}
+        >
+          {item}
+        </Option>
       ))}
     </div>
   );
