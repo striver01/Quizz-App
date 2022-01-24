@@ -121,8 +121,8 @@ const Main: FC<Props> = (props) => {
             modes: {
               bubble: {
                 distance: 400,
-                duration: 2,
-                opacity: 0.8,
+                duration: 10,
+                opacity: 0.6,
                 size: 40,
               },
               push: {
@@ -130,7 +130,7 @@ const Main: FC<Props> = (props) => {
               },
               repulse: {
                 distance: 100,
-                duration: 0.4,
+                duration: 0.6,
               },
             },
           },
